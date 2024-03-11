@@ -6,7 +6,11 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
-    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+    let scrollPosition = window.innerHeight + window.scrollY;
+    let documentHeight = document.body.offsetHeight;
+    let triggerPoint = 0.9; //(0.9 for 90% from the top)
+
+    if ((scrollPosition / documentHeight) > triggerPoint) {
         mybtn.style.display = 'block';
     } else {
         mybtn.style.display = 'none';
@@ -17,15 +21,6 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 
-
-// const scrollUp = document.querySelector('#scroll-up');
-// scrollUp.addEventListener('click', () => {
-//     window.scrollTo({
-//         top: 0,
-//         left: 0,
-//         behavior: 'smooth',
-//     });
-// });
 
 // Setting up the hamburger menu
 
