@@ -428,7 +428,7 @@ nav ul li {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  margin: auto;
+  margin: 1rem auto auto auto;
 }
 
 .contact-btn:hover {
@@ -636,6 +636,10 @@ footer {
 
   .social-links-title {
     margin-left: 0;
+  }
+
+  .social-links-container {
+    margin-right: 3rem;
   }
 
   /* scroll to top button */
