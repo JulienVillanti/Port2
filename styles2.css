@@ -379,8 +379,7 @@ nav ul li {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: auto;
-  /* min-width: 15rem; */
+  width: 100%;
 }
 
 .form {
@@ -557,14 +556,40 @@ footer {
 .scroll-up-icon-btn {
   display: none;
   position: fixed;
-  right: 0.5%;
-  bottom: 1%;
+  right: 2%;
+  bottom: 2%;
   cursor: pointer;
   background-color: var(--color7-blue);
   border: 2px solid var(--color4);
   border-radius: 30px;
   box-shadow: var(--color2) 4px 4px 0 0;
   color: var(--color3-light);
+}
+
+.scroll-up-icon-btn i {
+  position: relative;
+  top: 50%;
+  transform: translateY(10%);
+  bottom: 1%;
+  left: 10%;
+  right: 90%;
+}
+
+.fa-arrow-up {
+  width: 20px;
+  height: 20px;
+  padding-right: 4px;
+}
+
+.scroll-up-icon-btn:hover {
+  background-color: #fff;
+  color: var(--accent6);
+  box-shadow: var(--accent5) 3px 3px 0 0;
+}
+
+.scroll-up-icon-btn:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
 }
 
 /* MEDIA QUERIES  */
