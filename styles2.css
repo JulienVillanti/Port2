@@ -380,7 +380,7 @@ nav ul li {
   flex-direction: column;
   flex-wrap: wrap;
   width: auto;
-  min-width: 15rem;
+  /* min-width: 15rem; */
 }
 
 .form {
@@ -553,7 +553,115 @@ footer {
   transform: translate(2px, 2px);
 }
 
+/* Setting up the scroll up button for smaller screen */
+.scroll-up-icon-btn {
+  display: none;
+  position: fixed;
+  right: 0.5%;
+  bottom: 1%;
+  cursor: pointer;
+  background-color: var(--color7-blue);
+  border: 2px solid var(--color4);
+  border-radius: 30px;
+  box-shadow: var(--color2) 4px 4px 0 0;
+  color: var(--color3-light);
+}
+
 /* MEDIA QUERIES  */
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 420px) {
+  .hero-section {
+    flex-direction: column;
+    width: 80%;
+    margin-bottom: auto;
+  }
+
+  .about-more {
+    width: 100%;
+    margin-top: 50%;
+    max-width: max-content;
+  }
+
+  .projects-container {
+    flex-direction: column;
+  }
+
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    max-width: 80%;
+  }
+
+  .project-img {
+    align-self: center;
+    width: 50%;
+    margin-bottom: 1rem;
+    padding-top: 3rem;
+  }
+
+  /* Footer section */
+
+  .legal {
+    margin: 0;
+  }
+
+  .social-links-title {
+    margin-left: 0;
+  }
+
+  /* scroll to top button */
+  .scroll-up-btn {
+    font-size: 10px;
+    padding: 0 10px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (min-width: 421px) and (max-width: 768px) {
+  /* Hero Section styling */
+  .hero-section {
+    flex-direction: column;
+    width: 80%;
+    margin-bottom: auto;
+  }
+
+  .about-more {
+    width: 100%;
+    margin-top: 35%;
+    max-width: 100%;
+  }
+
+  .projects-container {
+    flex-direction: column;
+  }
+
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    max-width: 80%;
+  }
+
+  .project-img {
+    align-self: center;
+    width: 50%;
+    margin-bottom: 1rem;
+  }
+
+  /* Footer section */
+
+  .legal {
+    margin: 0;
+  }
+
+  .social-links-title {
+    margin-left: 0;
+  }
 }
