@@ -38,21 +38,14 @@
             <a href="#contact-section" class="nav-link">Contact</a>
         </li>
     </ul>
-    
+    </nav>
     <button class="hamburger-menu" id="burger-menu">
             <i class="fa-solid fa-bars"></i>
-        </button>
-        </nav>
-        <div class="mobile-menu-container">
-        <div class="mobile-menu" id="mobile-menu">
-        <ul>
-            <li><a href="#hero-section" class="nav-link active">About</a></li>
-            <li><a href="#skills-section" class="nav-link">Skills</a></li>
-            <li><a href="#projects-section" class="nav-link">Projects</a></li>
-            <li><a href="#contact-section" class="nav-link">Contact</a></li>
-        </ul>
-    </div>
-    </div>
+    </button>
+    <!-- <button class="hamburger-menu" id="burger-menu">
+            <i class="fa-solid fa-bars"></i>
+    </button> -->
+        
 <!-- </nav> -->
 <!-- NAV SECTION END -->
 
@@ -153,11 +146,11 @@
 <section id="contact-section">
     <h1 class="contact-heading">Get in Touch With Me</h1>
     <div class="form-container">
-    <form class="form ">
-        <input class="name " type=" text " name=" name " placeholder=" Name " required>
+    <form class="form" action=" " method="post" onsubmit="return validate()">
+        <input id="name-field" class="name " type=" text " name=" name " placeholder=" Name " required>
         <input class="email " type=" email " name=" email " placeholder=" E-mail " required>
         <textarea class="message " placeholder=" Message " name=" message " rows="5" cols="10" required></textarea>
-        <button type=" submit " class=" contact-btn " value=" send ">Send</button>
+        <button type=" submit " class=" contact-btn " value=" send " onclick="sendContact()">Send</button>
     </form>
     </div>
     <h3 class="social-links-title">You can also find me here:</h3>

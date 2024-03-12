@@ -112,6 +112,10 @@ nav ul li {
   font-size: 1.4rem;
 }
 
+/* .burger-icon {
+
+} */
+
 /* Hamburger menu */
 
 .hamburger-menu {
@@ -459,12 +463,12 @@ nav ul li {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-left: 4rem;
+  margin-left: 2rem;
 }
 
 .social-links-title {
   text-align: center;
-  margin-left: 2.5rem;
+  /* margin-left: 2.5rem; */
 }
 
 .social-link {
@@ -502,9 +506,9 @@ footer {
 
 .legal {
   text-align: center;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
   font-size: small;
-  margin-left: 2rem;
+  /* margin-left: 2rem; */
 }
 
 /* Scroll to top button styling */
@@ -591,7 +595,7 @@ footer {
   background-color: #fff;
   color: var(--accent6);
   box-shadow: var(--accent5) 3px 3px 0 0;
-  animation: bounce 0.5s;
+  animation: jello 1s;
 }
 
 .scroll-up-icon-btn:active {
@@ -602,6 +606,59 @@ footer {
 /* MEDIA QUERIES  */
 
 @media screen and (min-width: 320px) and (max-width: 420px) {
+  /* NAVBAR styling */
+  .julien-name {
+    padding: 0;
+    font-size: x-large;
+    position: fixed;
+    left: 2%;
+    color: var(--bg-color);
+  }
+
+  #navbar {
+    justify-content: center;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .nav-list.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color2);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .nav-list.active li {
+    margin-bottom: 0.5rem;
+  }
+
+  .nav-list.active a {
+    font-size: 1.2rem;
+  }
+
+  .hamburger-menu {
+    display: block !important;
+    position: fixed;
+    top: 0.5%;
+    right: 1%;
+    color: var(--accent6);
+    z-index: 1000;
+  }
+
+  .hamburger-menu.fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+  }
+
   .hero-section {
     flex-direction: column;
     width: 80%;
@@ -609,15 +666,15 @@ footer {
   }
 
   .hero-section img {
-    height: 200px;
-    width: 200px;
+    /* height: 200px; */
+    width: 60%;
     margin-top: 2rem;
     margin-bottom: 2rem;
     margin-right: 0;
     border-radius: 50%;
     position: relative;
     top: 0;
-    left: 20;
+    /* left: 20; */
   }
 
   .about-more {
@@ -662,7 +719,7 @@ footer {
   }
 
   .social-links-container {
-    margin-right: 2rem;
+    margin-right: 0;
   }
 
   .social-img {
@@ -678,6 +735,45 @@ footer {
 }
 
 @media screen and (min-width: 421px) and (max-width: 768px) {
+  /* NAVBAR styling */
+  .julien-name {
+    padding: 0;
+    font-size: x-large;
+    position: fixed;
+    left: 2%;
+    color: var(--bg-color);
+    animation: jello 1s;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .nav-list.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color2);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .nav-list.active li {
+    margin-bottom: 0.5rem;
+  }
+
+  .nav-list.active a {
+    font-size: 1.2rem;
+  }
+
   /* Hero Section styling */
   .hero-section {
     flex-direction: column;
@@ -739,5 +835,35 @@ footer {
 
   .social-img {
     margin-right: 1rem;
+    width: 50px;
+  }
+
+  /* Hamburger styling */
+
+  .hamburger-menu {
+    display: block;
+    position: fixed;
+    top: 1%;
+    right: 1%;
+    color: var(--accent6);
+    z-index: 1000;
+  }
+
+  .burger-icon {
+    display: block;
+  }
+}
+
+@media screen and(min-width: 320px) and (min-height: 667px) {
+  .hero-section img {
+    height: 150px;
+    width: 150px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 0;
+    border-radius: 50%;
+    position: relative;
+    top: 0;
+    left: 20;
   }
 }
