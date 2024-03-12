@@ -662,7 +662,7 @@ footer {
   }
 
   .social-links-container {
-    margin-right: 1rem;
+    margin-right: 2rem;
   }
 
   .social-img {
@@ -730,7 +730,7 @@ footer {
   }
 
   .social-links-container {
-    margin-left: 2rem;
+    margin-left: 1rem;
   }
 
   .social-links-title {
@@ -738,6 +738,6 @@ footer {
   }
 
   .social-img {
-    margin-right: 2rem;
+    margin-right: 1rem;
   }
 }

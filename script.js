@@ -43,9 +43,3 @@ toggleButtons();
 
 // Hamburger menu part
 
-const burger = document.querySelector('#burger-menu');
-const mobileMenuContainer = document.querySelector('.mobile-menu-container');
-
-burger.addEventListener('click', () => {
-    mobileMenuContainer.classList.toggle('show');
-});
