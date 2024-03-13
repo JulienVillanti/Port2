@@ -93,6 +93,9 @@ function validateAndSubmit() {
         alert('Please enter a valid email!')
         return;
     }
+    if (isFieldEmpty(name, email, message)) {
+        return;
+    }
 
     const formData = "Name: " + name + "\n" +
         "Email: " + email + "\n" +
@@ -118,6 +121,13 @@ function validateAndSubmit() {
 function isValidEmail(email) {
     let emailRgx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;;
     return emailRgx.test(email);
+}
+function isFieldEmpty(name, email, message) {
+    if (name.trim() === '' || email.trim() === '' || message.trim() === '') {
+        alert('Please fill out all fields before submitting. Thank you!');
+        return true;
+    }
+    return false;
 }
 
 //NOTE===========================
