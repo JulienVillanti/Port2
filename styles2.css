@@ -811,6 +811,10 @@ footer {
     max-width: 100%;
   }
 
+  .about-img {
+    margin-right: 0;
+  }
+
   .projects-container {
     flex-direction: column;
   }

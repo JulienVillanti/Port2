@@ -122,4 +122,4 @@ function isValidEmail(email) {
 
 //NOTE===========================
 //unfortunately could not get the form info to be forwarded to me, it downloads the info to the senders computer as a .txt file, 
-//but cannot formward it to me, I could've user a 3rd party platform but will probably update once we studied DB.
+//but cannot forward it to me, I could've user a 3rd party platform but will probably update once we studied DB.
