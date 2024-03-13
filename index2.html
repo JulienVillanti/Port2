@@ -22,8 +22,9 @@
 </head>
 
 <!-- NAV SECTION START -->
+<h1 class="julien-name">JULIEN</h1>
 <nav id="navbar" class="nav">
-    <h1 class="julien-name">JULIEN</h1>
+    <!-- <h1 class="julien-name">JULIEN</h1> -->
     <ul class="nav-list">
         <li>
             <a href="#hero-section" class="nav-link active">About</a>
@@ -131,12 +132,12 @@
                 <p class=" project-details ">Created as a mean to get familiar with JavaScript and some fundaments of programming, this project goal was to work with arrays, functions, strings, loops and if/else statements. A very fun project!</p>
                 <a href="https://github.com/JulienVillanti/Projects" target=" _blank " class=" project-link ">Take Me To the Dragon!</a>
             </div>
-            <div class=" project-container project-tile ">
+            <!-- <div class=" project-container project-tile ">
                 <img src=" img/RPG picture.png " " class=" project-img pj2 ">
             <h3 class=" project-title ">Simple RPG Sim</h3>
             <p class=" project-details ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus impedit ut sapiente minus hic rem illum error nostrum, totam nisi! Dolore inventore, ratione optio tempora sequi nihil? Sunt, rerum voluptates.</p>
             <a href=" # " target=" _blank " class=" project-link ">Check it out</a>
-        </div>
+        </div> -->
     </div>
 </section>
 
@@ -146,11 +147,11 @@
 <section id="contact-section">
     <h1 class="contact-heading">Get in Touch With Me</h1>
     <div class="form-container">
-    <form class="form" action=" " method="post" onsubmit="return validate()">
+    <form class="form" id="myForm" action=" ">
         <input id="name-field" class="name " type=" text " name=" name " placeholder=" Name " required>
-        <input class="email " type=" email " name=" email " placeholder=" E-mail " required>
-        <textarea class="message " placeholder=" Message " name=" message " rows="5" cols="10" required></textarea>
-        <button type=" submit " class=" contact-btn " value=" send " onclick="sendContact()">Send</button>
+        <input id="email-field" class="email " type=" email " name=" email " placeholder=" E-mail " required>
+        <textarea id="message-field" class="message " placeholder=" Message " name=" message " rows="5" cols="10" required></textarea>
+        <button type=" submit" id="submit-form" class=" contact-btn " value=" send" onclick="validateAndSubmit()">Send</button>
     </form>
     </div>
     <h3 class="social-links-title">You can also find me here:</h3>
